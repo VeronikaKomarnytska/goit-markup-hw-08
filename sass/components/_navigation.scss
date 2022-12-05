@@ -1,57 +1,84 @@
 .site-nav,
 .contact-nav {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 0;
-    margin-bottom: -1px;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0;
+  margin-bottom: -1px;
 
-    color: var(--title-text-color);
-    list-style: none;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    cursor: pointer;
+  color: var(--title-text-color);
+  list-style: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  cursor: pointer;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contacts {
+    flex-direction: column;
+    gap: 10px;
+    .contact-nav {
+      font-size: 12px;
+      line-height: 1.16;
+    }
+  }
+}
 .contact-nav {
-    display: flex;
-    align-items: center;
-    color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  color: var(--primary-text-color);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 .nav-icon {
-    fill: currentColor;
-    margin-right: 10px;
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .header-nav {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .main-nav {
-    display: flex;
+  display: flex;
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
 }
 
 .header-contacts {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
 
-    color: var(--primary-text-color);
+  color: var(--primary-text-color);
+
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    gap: 30px;
+  }
 }
 
 .item:not(:last-child) {
-    margin-right: 50px;
+  margin-right: 50px;
 }
 
 .main-nav .link.current {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .site-nav {
-    position: relative;
+  position: relative;
 }
 
 .site-nav.link.current::after {
@@ -66,8 +93,7 @@
     margin-bottom: -1px;
     border-radius: 2px;
     background-color: var(--accent-color);
-}
-
+  }
 .page-header {
-    border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }

@@ -37,3 +37,8 @@
 .wrapper {
     position: relative;
 }
+@media screen and (max-width: 1199px) {
+    .about-services {
+        display: none;
+    }
+}
