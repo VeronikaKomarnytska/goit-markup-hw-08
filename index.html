@@ -15,18 +15,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
-      </head>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
   <body>
     <header class="page-header">
       <div class="container">
-        <!-- Logo -->
+        <!-- LOGO -->
         <a class="logo" href="./index.html"
           ><span class="logo-first">Web</span
           ><span class="logo-second">Studio</span></a
         >
         <nav class="header-nav">
-          <!-- Навігація сторінок сайту -->
           <ul class="main-nav list">
             <li class="item">
               <a class="site-nav link current" href="./index.html">Студія</a>
@@ -39,7 +38,6 @@
             </li>
           </ul>
         </nav>
-        <!-- Контакти студії -->
         <ul class="header-contacts list">
           <li class="email-item">
             <a class="contact-nav link" href="mailto:info@devstudio.com">
@@ -58,12 +56,20 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="" width="40" height="40">
+            <use href="./images/icons.svg#mobile-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="hero-container container">
-          <!--Section hero-->
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero-button" type="button" data-modal-open>
             Замовити послугу
@@ -73,7 +79,6 @@
 
       <section class="advantages section">
         <div class="container">
-          <!-- Наші сильні сторони -->
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="advantages-list list">
             <li class="advantages-list__item list">
@@ -130,12 +135,11 @@
       <section class="about-services section">
         <h2 class="about-services__title">Чим ми займаємося</h2>
         <div class="container">
-          <!-- Наші послуги -->
           <ul class="services-list list">
             <li class="services-list__item list">
               <div class="wrapper">
                 <img
-                  src="./images/img.svg"
+                  src="./images/box1.svg"
                   alt="hands on keyboard"
                   width="370"
                   height="294"
@@ -173,15 +177,15 @@
       <section class="about-team section">
         <h2 class="team-title">Наша команда</h2>
         <div class="container">
-          <!-- Команда -->
           <ul class="team-list list">
             <li class="team-member list">
-              <img
-                src="./images/img.jpg"
-                alt="Photo of Product Designer"
-                width="270"
-                height="260"
-              />
+              <img class="member-photo srcset=" ./images/igor_sm@1x.jpg" 450w,
+              ./images/igor_sm@2x.jpg" 900w, ./images/igor_md@1x.jpg" 354w,
+              ./images/igor_md@2x.jpg" 708w, ./images/igor_lg@1x.jpg" 270w,
+              ./images/igor_lg@2x.jpg" 540w " src="./images/igor_sm@1x.jpg"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,
+              (min-width: 480px) 450px, 100vw" width="450" height="460"
+              alt="Photo of Product Designer" />
               <div class="member-card">
                 <h3 class="member-name">Ігор Дем'яненко</h3>
                 <p class="position">Product Designer</p>
@@ -242,12 +246,13 @@
               </div>
             </li>
             <li class="team-member list">
-              <img
-                src="./images/img(1).jpg"
-                alt="Photo of Frontend Developer"
-                width="270"
-                height="260"
-              />
+              <img class="member-photo" srcset=" ./images/olga_sm@1x.jpg" 450w,
+              ./images/olga_sm@2x.jpg" 900w, ./images/olga_md@1x.jpg" 354w,
+              ./images/olga_md@2x.jpg" 708w, ./images/olga_lg@1x.jpg" 270w,
+              ./images/olga_lg@2x.jpg" 540w " src=" ./images/olga_sm@1x.jpg"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,
+              (min-width: 480px) 450px, 100vw" width="450" height="460"
+              alt="Photo of Frontend Developer" />
               <div class="member-card">
                 <h3 class="member-name">Ольга Рєпіна</h3>
                 <p class="position">Frontend Developer</p>
@@ -308,12 +313,13 @@
               </div>
             </li>
             <li class="team-member list">
-              <img
-                src="./images/img(2).jpg"
-                alt="Photo of Marketing employee"
-                width="270"
-                height="260"
-              />
+              <img class="member-photo srcset=" ./images/mykola_sm@1x.jpg" 450w,
+              ./images/mykola_sm@2x.jpg" 900w, ./images/mykola_md@1x.jpg" 354w,
+              ./images/mykola_md@2x.jpg" 708w, ./images/mykola_lg@1x.jpg" 270w,
+              ./images/mykola_lg@2x.jpg" 540w " src=" ./images/mykola_sm@1x.jpg"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,
+              (min-width: 480px) 450px, 100vw" width="450" height="460"
+              alt="Photo of Marketing employee" />
               <div class="member-card">
                 <h3 class="member-name">Микола Тарасов</h3>
                 <p class="position">Marketing</p>
@@ -374,12 +380,15 @@
               </div>
             </li>
             <li class="team-member list">
-              <img
-                src="./images/img(3).jpg"
-                alt="Photo of UI Designer"
-                width="270"
-                height="260"
-              />
+              <img class="member-photo srcset=" ./images/myhailo_sm@1x.jpg"
+              450w, ./images/myhailo_sm@2x.jpg" 900w,
+              ./images/myhailo_md@1x.jpg" 354w, ./images/myhailo_md@2x.jpg"
+              708w, ./images/myhailo_lg@1x.jpg" 270w,
+              ./images/myhailo_lg@2x.jpg" 540w " src="
+              ./images/myhailo_sm@1x.jpg" sizes="(min-width: 1200px) 270px,
+              (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              width="450" height="460" alt="Photo of Marketing employee" />
+
               <div class="member-card">
                 <h3 class="member-name">Михайло Єрмаков</h3>
                 <p class="position">UI Designer</p>
@@ -713,6 +722,53 @@
         </form>
       </div>
     </div>
+
+    //Mobile menu
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="" width="40" height="40">
+          <use href="./images/icons.svg#mobile-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="item">
+          <a class="mobile-nav link current" href="./index.html">Студія</a>
+        </li>
+        <li class="item">
+          <a class="mobile-nav link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="item">
+          <a class="mobile-nav link" href="">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts list">
+        <li class="mobile-phone-item">
+          <a class="mobile-phone link" href="tel:+380961111111">
+            +38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-email-item">
+          <a class="mobile-email link" href="mailto:info@devstudio.com">
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials list">
+        <li><a class="mobile-socials-item link" href="">Instagram</a></li>
+        <li><a class="mobile-socials-item link" href="">Twitter</a></li>
+        <li><a class="mobile-socials-item link" href="">Facebook</a></li>
+        <li><a class="mobile-socials-item link" href="">LinkedIn</a></li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
