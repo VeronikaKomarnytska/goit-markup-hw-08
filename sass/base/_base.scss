@@ -7,15 +7,14 @@ body {
 }
 
 .section {
-  // mobile
   padding-top: 60px;
   padding-bottom: 60px;
 
-//desktop
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+  // outline: 2px solid green;
 }
 
 // BREAKPOINTS
@@ -28,19 +27,20 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  outline: 2px solid hotpink;
+
+  display: flex;
+  // outline: 2px solid hotpink;
 
   @media screen and (min-width: 480px) {
     width: 480px;
-  }
+   }
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    flex-wrap: wrap;
   }
- 
+
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }

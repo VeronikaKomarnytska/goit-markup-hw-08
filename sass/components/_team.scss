@@ -2,7 +2,7 @@
   background: #f5f4fa;
 }
 .team-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: 700;
   font-size: 28px;
@@ -12,14 +12,14 @@
 
   @media screen and (min-width: 1200px) {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
 .team-list {
   display: block;
   align-items: center;
-  margin-bottom: 30px;
-
+ 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -41,11 +41,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
- @media screen and (min-width: 480px) and (max-width: 1119px){
-  .team-member::not(:last-child) {
-      margin-bottom: 30px;
-    }
- }
+@media screen and (max-width: 767px) {
+  .team-member:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 
 .member-photo {
   @media screen and (min-width: 768px) {
